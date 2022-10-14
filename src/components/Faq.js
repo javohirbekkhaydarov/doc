@@ -1,52 +1,38 @@
-import React from "react";
-
+import React, { useState } from "react";
+import "./Faq.css";
+import data from "../data";
 const Faq = () => {
+  const [option, setOption] = useState(null);
+  const toggle = (index) => {
+    if (option === index) {
+      return setOption(null);
+    }
+    setOption(index);
+  };
   return (
-    <Faq>
-      <h2>
-        Any Questions <span>FAQ</span>
-      </h2>
+    <>
+      <div className="wrapper">
+        {data.map((item, index) => {
+          return (
+            <div className="item" key={index}>
+              <div className="title" onClick={() => toggle(index)}>
+                <h2 className="con">{item.question}</h2>
+                <span>{option == index ? "⬇" : "⬆"}</span>
+              </div>
+              <div
+                className={
+                  option == index ? "content-faq show" : "content-faq "
 
-      <div className="question">
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-            quidem.
-          </p>
-        </div>
+                }
+              >
+                {" "}
+                {item.answear}{" "}
+              </div>
+            </div>
+          );
+        })}
       </div>
-
-      <div className="question">
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-            quidem.
-          </p>
-        </div>
-      </div>
-
-      <div className="question">
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-            quidem.
-          </p>
-        </div>
-      </div>
-
-      <div className="question">
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-            quidem.
-          </p>
-        </div>
-      </div>
-    </Faq>
+    </>
   );
 };
 
