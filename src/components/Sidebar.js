@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import Faq from "./Faq";
+
 const Sidebar = () => {
   return (
     <div className="sidebar">
@@ -12,7 +12,7 @@ const Sidebar = () => {
           itaque, explicabo non ducimus dolorum eveniet consectetur, ut mollitia
           eaque quisquam facere aspernatur!
         </p>
-        <Faq />
+        {/* <Faq /> */}
       </div>
     </div>
   );

@@ -1,15 +1,17 @@
 import React from "react";
 import { useState } from "react";
-
-const Toggle = ({ children, title }) => {
+const Toggle = ({ title }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div layout onClick={() => setToggle(!toggle)}>
-      <h4 className="question">{title}</h4>
-      {toggle ? children : ""}
-      <div className="faq-line"></div>
-    </div>
+    // <div  onClick={() => setToggle(!toggle)}>
+    //   <h4 className="question">{title}</h4>
+    //   {toggle}
+    //   <div className="faq-line"></div>
+    // </div>
+   <h1>
+    hwy
+   </h1>
   );
 };
 
