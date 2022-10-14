@@ -1,0 +1,26 @@
+#nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #21232a;
+  padding: 1rem 0;
+  color: #fff;
+  position: fixed;
+  right:0,
+
+
+}
+.lists ul {
+  display: flex;
+  justify-content: space-between;
+}
+.lists ul li {
+  list-style: none;
+  margin: 0 10px;
+  color: #61dafb;
+}
+
+.logo,
+.search {
+  margin: 0 20px;
+}

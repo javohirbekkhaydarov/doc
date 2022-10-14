@@ -1,0 +1,23 @@
+.sidebar {
+  display: flex;
+  text-align: left;
+  width: 50%;
+  height: 90vh;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+.sidebar-info {
+  background: #c5ebf6;
+  position: fixed;
+  right: 0;
+  width: 30%;
+}
+.sidebar .sidebar-content,
+.sidebar-title {
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+}
