@@ -10,12 +10,9 @@ const Menu = () => {
     fetch("https://jsonplaceholder.typicode.com/posts?_limit=10")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setPosts(data);
       });
   }, []);
-
-  console.log("Posts", posts);
 
   return (
     <div className="content ">
@@ -34,19 +31,19 @@ const Menu = () => {
 
       {/* unordered list */}
       <ul className="content-list">
-        <li>
+        <li id="content-list-name">
           <a href="!#"> Try React</a>
         </li>
-        <li>
+        <li id="content-list-name">
           <a href="!#"> Learn React</a>
         </li>{" "}
-        <li>
+        <li id="content-list-name">
           <a href="!#"> Staying Informed</a>
         </li>
-        <li>
+        <li id="content-list-name">
           <a href="!#"> Versioned Documentation</a>
         </li>
-        <li>
+        <li id="content-list-name">
           <a href="!#"> Something Missing?</a>
         </li>
       </ul>
@@ -56,7 +53,7 @@ const Menu = () => {
           <>
             <section className="center" key={post.id}>
               <h1 className="title"> {post.title}</h1>
-              
+
               <p className="text">{post.body}</p>
               <div className="underline"></div>
             </section>

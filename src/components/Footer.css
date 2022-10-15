@@ -1,6 +1,6 @@
 .footer {
   z-index: -1;
-  width: 100%;
+  width: 75%;
   background: #21232a;
   color: #61dafb;
   padding: 2rem auto;
@@ -9,22 +9,22 @@
 .contanier {
   display: flex;
   justify-content: space-around;
+  margin-top: 2rem;
 }
 .top-footer {
-  background-color: #282C34;
+  background-color: #282c34;
   display: flex;
   justify-content: right;
   position: relative;
   color: #fff;
 }
-.top-footer span  {
+.top-footer span {
   position: absolute;
   display: flex;
   justify-content: right;
   right: 80px;
   color: #61dafb;
-  top: 60px
-
+  top: 60px;
 }
 .footer-title {
   display: flex;
@@ -33,25 +33,99 @@
   padding: 2rem;
 }
 
-
 .left {
   display: flex;
   flex-direction: column;
+  color: #959595;
+  font-size: 16px;
+  margin: 0;
 }
-h3,
-h1 {
-  margin: 1rem auto;
+.docs,
+.channels,
+.left {
+  width: 33%;
+}
+.left-2 {
+  visibility: hidden;
+}
+
+.left .left-img {
+  width: 170px;
+  text-align: center;
+  margin: 0 auto;
+}
+h4 {
+  margin: 1rem 0px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #959595;
+  font-size: 16px;
+  text-align: left;
 }
 ul li {
   list-style: none;
   margin: 5px auto;
   color: #fff;
+  line-height: 30px;
+  display: flex;
+  justify-content: left;
 }
-ul li:hover {
+ul li a {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 5px auto;
+  color: #fff;
+  line-height: 30px;
+  margin-left: 0px;
+  text-decoration: none;
+}
+ul li a:hover {
   color: #61dafb;
   cursor: pointer;
 }
 
 .year {
   margin: 1rem auto;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+  }
+  .footer .contanier {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .docs,
+  .channels,
+  .left {
+    width: 30%;
+  }
+  .left-2 {
+    display: none;
+  }
+  .more,
+  .community {
+    width: 40%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-top: 10rem;
+  }
+  .top-nav,
+  .top-nav a {
+    font-size: 4px;
+  }
+  .versions,
+  .languages,
+  .github {
+    padding: 0.3rem;
+  }
 }

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdTranslate } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { GrShare } from "react-icons/gr";
 import "./Navbar.css";
+
 const Navbar = () => {
   return (
     <header className="header">
@@ -19,10 +20,22 @@ const Navbar = () => {
           </a>
           <div className="lists">
             <ul>
-              <li> Docs</li>
-              <li> Tutorial</li>
-              <li> Blog</li>
-              <li> Community</li>
+              <li>
+                {" "}
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Tutorial</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Community</a>
+              </li>
             </ul>
           </div>
 
@@ -40,7 +53,24 @@ const Navbar = () => {
           </div>
           {/* versions */}
           <div className="versions">
-            <a href=""> v18.2.0</a>
+            <select name="version" id="version">
+              <option value="v16.0.0">
+                {" "}
+                <a href=""> v18.2.0</a>
+              </option>
+              <option value="v15.0.0">
+                {" "}
+                <a href=""> v18.2.0</a>
+              </option>
+              <option value="v14.0.0">
+                {" "}
+                <a href=""> v18.2.0</a>
+              </option>
+              <option value="v13.0.0">
+                {" "}
+                <a href=""> v18.2.0</a>
+              </option>
+            </select>
           </div>
           <div className="languages">
             <MdTranslate /> Languages

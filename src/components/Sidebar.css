@@ -7,20 +7,20 @@
 .sidebar {
   display: flex;
   text-align: left;
-  width: 30%;
-  margin: 5rem;
+  width: 20%;
+  background-color: #f7f7f7;
   position: relative;
-  z-index: 33;
+  z-index: 2;
 }
 .sidebar-content {
-
   position: fixed;
-  
+  top: 10rem;
+  bottom: 5rem;
 }
 .sidebar-info {
   position: fixed;
   right: 0;
-  width: 30%;
+  width: 100%;
 }
 .sidebar .sidebar-content,
 .sidebar-title {
@@ -34,4 +34,16 @@
 .sidebar-title {
   font-size: 30px;
   color: #909090;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    margin: 4rem auto;
+  }
+  .sidebar-content {
+    position: initial;
+    width: 100%;
+  }
+  
 }
