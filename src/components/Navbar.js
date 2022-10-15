@@ -20,19 +20,19 @@ const Navbar = () => {
           </a>
           <div className="lists">
             <ul>
-              <li>
+              <li className="list">
                 {" "}
                 <a href="#">Docs</a>
               </li>
-              <li>
+              <li className="list">
                 {" "}
                 <a href="#">Tutorial</a>
               </li>
-              <li>
+              <li className="list">
                 {" "}
                 <a href="#">Blog</a>
               </li>
-              <li>
+              <li className="list">
                 {" "}
                 <a href="#">Community</a>
               </li>

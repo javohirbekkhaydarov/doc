@@ -2,11 +2,14 @@ import React from "react";
 import "./Footer.css";
 const Footer = () => {
   return (
+    // footer ++++++++++++++++
     <div className="footer">
       <div className="top-footer">
+    {/* // footer top title ++++++++++++++++ */}
         <span>Next article</span>
         <h1 className="footer-title">Add React to a Website</h1>
       </div>
+      {/*  footer links*/}
       <div className="contanier">
         <div className="left">
           <img
@@ -70,6 +73,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      {/* footer links second part */}
       <div className="contanier">
         <div className="left left-2">
           <img

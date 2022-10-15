@@ -4,6 +4,7 @@ import data from "./json/data";
 import { AiOutlineDown } from "react-icons/ai";
 import { AiOutlineUp } from "react-icons/ai";
 const Faq = () => {
+  // dropdown code
   const [option, setOption] = useState(null);
   const toggle = (index) => {
     if (option === index) {
@@ -15,11 +16,13 @@ const Faq = () => {
   const [arr, SetArr] = useState(data);
   return (
     <>
+    {/* dropdown */}
       <div className="wrapper">
         {arr.map((item, index) => (
           <div className="faq-name " key="index" onClick={() => toggle(index)}>
             <div className="title"
             >
+              {/* json map */}
               {item.name}
               <span>
                 {option == index

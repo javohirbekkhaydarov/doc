@@ -16,6 +16,7 @@ const Menu = () => {
 
   return (
     <div className="content ">
+      {/* start menu jjs */}
       <h1 className="start-font">Getting Started</h1>
       <p className="content-info">
         {" "}
@@ -48,6 +49,7 @@ const Menu = () => {
         </li>
       </ul>
       <div className="underline"></div>
+      {/* map api*/}
       {posts.map((post) => {
         return (
           <>
@@ -60,6 +62,7 @@ const Menu = () => {
           </>
         );
       })}
+      {/* useful like */}
       <div className="useful">
         <p className="useful_text">
           this is useful

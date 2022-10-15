@@ -75,7 +75,8 @@ ul li a {
   display: flex;
   justify-content: flex-start;
   text-align: left;
-  margin: 5px auto;
+  margin: 1px auto;
+  padding: 1px;
   color: #fff;
   line-height: 30px;
   margin-left: 0px;
