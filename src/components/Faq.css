@@ -1,0 +1,30 @@
+.wrapper {
+  width: 500px;
+  transition: all 0.3s linear;
+}
+.item {
+  transition: all 0.3s linear;
+
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  color: #1c1c1c;
+  background-color: #f7f7f7;
+}
+.title {
+  color: #1c1c1c;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-faq {
+  color: #5e3636;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.content-faq.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.3s linear;
+}

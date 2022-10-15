@@ -1,12 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .sidebar {
-  z-index: initial;
   display: flex;
   text-align: left;
-  width: 50%;
-  height: 90vh;
-  justify-content: center;
+  width: 30%;
+  margin: 5rem;
   position: relative;
-  flex-direction: column;
+  z-index: 33;
+}
+.sidebar-content {
+
+  position: fixed;
+  
 }
 .sidebar-info {
   position: fixed;
