@@ -17,6 +17,7 @@
   font-size: 45px;
   margin: 3rem auto;
   line-height: 2rem;
+  text-align: left;
 }
 .center {
   display: flex;
