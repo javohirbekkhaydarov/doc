@@ -54,19 +54,19 @@ const Navbar = () => {
           {/* versions */}
           <div className="versions">
             <select name="version" id="version">
-              <option value="v16.0.0">
+              <option value="v16.0.0" id="option" style={{ padding: "10px" }}>
                 {" "}
                 <a href=""> v18.2.0</a>
               </option>
-              <option value="v15.0.0">
+              <option value="v15.0.0" id="option" style={{ padding: "10px" }}>
                 {" "}
                 <a href=""> v18.2.0</a>
               </option>
-              <option value="v14.0.0">
+              <option value="v14.0.0" id="option" style={{ padding: "10px" }}>
                 {" "}
                 <a href=""> v18.2.0</a>
               </option>
-              <option value="v13.0.0">
+              <option value="v13.0.0" id="option" style={{ padding: "10px" }}>
                 {" "}
                 <a href=""> v18.2.0</a>
               </option>

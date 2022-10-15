@@ -38,33 +38,34 @@
   width: 100%;
   padding: -2px auto;
   background: #21232a;
-  /* margin:  10px auto; */
+
   color: #fff;
-  /* line-height: 60px; */
   align-items: center;
 }
 .lists ul {
   display: flex;
   justify-content: space-between;
 }
-.lists ul li a {
+.lists ul li {
   list-style: none;
-  margin: 10px 15px;
+  margin: 0px 15px;
   cursor: pointer;
 }
 
-ul li {
+ul li a {
   border-bottom: 2px solid transparent;
+  padding: 10px;
+  bottom: -20px;
 }
-ul li a:focus li {
+ul li a:focus {
   border-bottom: 2px solid #61dafb;
 }
-ul li:hover {
+ul li a:hover {
   border-bottom: 2px solid #61dafb;
 }
 .lists ul li:first-child {
   list-style: none;
-  /* margin: 0 10px; */
+  margin: 0 10px;
   color: #61dafb;
 }
 .logo {
@@ -147,7 +148,6 @@ ul li:hover {
 }
 #version option {
   font-size: 14px;
-  margin: 20px auto;
 }
 
 .versions a,
