@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Faq.css";
+import "./styles/Faq.css";
 import data from "./json/data";
 import { AiOutlineDown } from "react-icons/ai";
 import { AiOutlineUp } from "react-icons/ai";
@@ -13,11 +13,16 @@ const Faq = () => {
     setOption(index);
   };
 
+  // arrive data 
   const [arr, SetArr] = useState(data);
+
+
   return (
     <>
     {/* dropdown */}
       <div className="wrapper">
+      
+       {/* dates */}
         {arr.map((item, index) => (
           <div className="faq-name " key="index" onClick={() => toggle(index)}>
             <div className="title"
@@ -31,6 +36,7 @@ const Faq = () => {
                   
               </span>
             </div>
+            {/* create faq */}
             {item.children.map((element) => {
               return (
                 <li

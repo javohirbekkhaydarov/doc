@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AiFillDislike } from "react-icons/ai";
 import { AiFillLike } from "react-icons/ai";
-import "./Menu.css";
+import "./styles/Menu.css";
 
 const Menu = () => {
   const [posts, setPosts] = useState([]);

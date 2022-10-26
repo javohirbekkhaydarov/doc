@@ -3,7 +3,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { MdTranslate } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { GrShare } from "react-icons/gr";
-import "./Navbar.css";
+import "./styles/Navbar.css";
 
 const Navbar = () => {
   return (
